@@ -77,8 +77,6 @@ public class JwtRequestFilter extends OncePerRequestFilter {
                         filterChain.doFilter(request, response);
 
 
-
-
                     }else{
                         throw new RuntimeException("Expired or invalid JWT token");
                     }
